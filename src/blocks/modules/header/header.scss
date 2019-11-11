@@ -1,0 +1,60 @@
+.color {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: center;
+    div
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:solid lightblue 1px;
+}
+.p-1 {
+    background-color: $p-1;
+}
+
+.p-2 {
+    background-color: $p-2;
+}
+
+.p-3 {
+    background-color: $p-3;
+}
+
+.p-4 {
+    background-color: $p-4;
+}
+
+
+.l1-1{
+    background-color: $l1-p1;
+}
+
+.l2-1{
+    background-color: $l2-p1;
+}
+
+.l3-1{
+    background-color: $l3-p1;
+}
+
+
+.d1-1 {
+    background-color: $d1-p1;
+
+}
+
+.d2-1 {
+    background-color: $d2-p1;
+
+}
+.d3-1 {
+    background-color: $d3-p1;
+
+}
+
+}
+
+h1 {@include fonts(36px,tahoma,400, green);}
+h2 {@include fonts(48px,tahoma,700,red);}
