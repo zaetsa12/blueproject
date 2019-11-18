@@ -295,9 +295,10 @@ text-align: center;
 background-color: #f6f9f9;
 }
 
-.btn .btn-primary {
+.btn .btn-primary
+ {
 
-    background-color: #f75e2e;
+    background-color: $p-2;
    }
 
 .btn1 {
@@ -305,8 +306,9 @@ background-color: #f6f9f9;
    height: 50px;
 }
 
-.btn .btn-secondary .btn2 .btn3 {
-background-color: #0287c3;
+.btn .btn-secondary .btn2 .btn3 
+{
+background-color: $p-1;
 }
 
 .btn2
@@ -320,16 +322,12 @@ background-color: #0287c3;
     height: 50px;
 }
 
-.btn4{
-    width: 220px;
-    height: 50px;
+.btn4  {
+    @include button(220px, 50px, #fff, $p-2 solid 1px);
 }
 
-.btn .btn-outline-danger .btn4 
-{
-    border-color: #f75e2e;
-      background-color: #f75e2e;
-
+.btn4:hover {
+    @include button(220px, 50px, $p-2, $p-2 solid 1px);
 }
 
 .btn5 {
@@ -353,13 +351,24 @@ background-color: #0287c3;
 }
 
 .btn4sm {
-    height: 40px;
-    width: 150px;
-}
+    @include button(150px, 40px, #fff, $p-2 solid 1px);
+   }
+
+ .btn4sm:hover {
+    @include button(150px, 40px, $p-2, $p-2 solid 1px);
+
+ }  
+
+
+
 .btn5sm{
-    height: 40px;
-    width: 150px;
+    @include button(150px, 40px, #fff, $p-1 solid 1px);
 }
+.btn5sm:hover {
+    @include button(150px, 40px, $p-1, $p-1 solid 1px);
+
+}
+
 
 .btn-group {
      .kol{
@@ -367,3 +376,63 @@ height: 30px;
 width: 30px;
 border-radius: 50%;        }
 }
+
+
+label, input[type="radio"], input[type="checkbox"] {
+    line-height: 2.1ex;
+ }
+  
+ input[type="radio"],
+ input[type="checkbox"] {
+     position: absolute;
+     left: -999em;
+ }
+  
+ input[type="radio"] + label,
+ input[type="checkbox"] + label {
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+ }
+  
+ input[type="radio"] + label::before,
+ input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 2ex;
+    width: 2ex;
+    background-color: white;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 4px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+    margin-right: 0.5em;
+ }
+  
+ input[type="radio"]:checked + label::before {
+    background: radial-gradient(circle at center, #1062a4 .6ex, white .7ex);
+ }
+  
+ input[type="radio"] + label::before {
+    border-radius: 50%;
+ }
+  
+ input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 1.2ex;
+    height: 0.4ex;
+    background: rgba(0, 0, 0, 0);
+    top: 0.9ex;
+    left: 0.4ex;
+    border: 3px solid #1062a4;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+ }
+ 
+ 

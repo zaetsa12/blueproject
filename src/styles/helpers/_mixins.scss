@@ -6,3 +6,11 @@
     font-weight: $font-weight;
     color: $font-color;
 }
+
+@mixin button ($width, $height, $bg, $border)
+{
+    width: $width;
+    height: $height;
+    background-color: $bg !important;
+    border: $border !important; 
+}
