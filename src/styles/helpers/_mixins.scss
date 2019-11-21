@@ -9,8 +9,9 @@
 
 @mixin button ($width, $height, $bg, $border)
 {
-    width: $width;
-    height: $height;
+    width: $width !important;
+    height: $height !important;
     background-color: $bg !important;
     border: $border !important; 
 }
+
