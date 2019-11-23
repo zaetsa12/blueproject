@@ -7,4 +7,241 @@
 @import "../blocks/modules";
 @import "bootstrap/bootstrap";
 
+h1, h2, h3, h4, h5, h5 , div, ul, li, p , span  {
+    margin: 0;
+    padding: 0;
+}
 
+h1 {@include fonts(35px,'poppinsbold', 400, #1e2021);}
+h2 {@include fonts(33px,'poppinsmedium', 400, #323538);}
+h3 {@include fonts(27px,'poppinsmedium', 400, #1e2021);}
+h4 {@include fonts(22px,'poppinsmedium', 400, #1e2021);}
+h5 {@include fonts(17px,'poppinsmedium', 400, #1e2021);}
+h6 {@include fonts(15px,'poppinsmedium', 400, #1e2021);}
+
+p {
+    @include fonts(14px,'poppinsregular', 400, #51555a);
+}
+
+.kolo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+       i { color: #fff; transform: scale(-1, 1); margin-left: 5px; }
+    
+}
+
+.small{ @include fonts (15px, poppinsregular, 400, $p-1);
+}
+
+.part1{
+margin-top: 90px;
+
+.print{
+    background-color: $l3-p1;
+    height:410px;
+    position: relative;
+    margin-bottom: 90px;
+
+    img{
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 154px;
+    }
+}
+.texxt{
+
+   h1{
+margin:30px 0 45px 0;
+     } 
+}
+
+}
+
+.part2{
+    background-color: $p-1;
+    background-image: url(../img/icons_transparent.png);
+    
+.tt{
+
+    margin: 50px 0 70px 0;
+    text-align: center;
+    .small{color: #fff; }
+    h2{color: #fff; margin-top: 27px;}
+}
+
+.serv{
+    height: 310px;
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 45px 50px 45px;
+
+h5{
+    margin: 20px 0;
+}
+
+}
+.ttt{
+    text-align: center;
+.btn6{
+    width: 280px;
+    height: 50px;
+    margin: 53px 0 90px 0;
+    
+}}
+
+}
+
+.part3 {
+    text-align: center;
+    margin: 83px 0 100px 0;
+
+h2{
+    margin: 27px 0 60px 0;
+}
+    .step {
+        text-align: center;
+
+        span {@include fonts (17px, poppinsssemibold, 400, #1e2021);
+        text-transform: uppercase;
+        display: block;
+        margin: 35px 0 22px 0;}
+            
+    }
+}
+
+.part4{
+    background-color: $p-1;
+    background-image: url(../img/sky.png);
+    height: 555px;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+
+    
+.tt{
+
+    margin: 50px 0 70px 0;
+    text-align: center;
+
+    .small{color: #fff; }
+    h2{color: #fff; margin-top: 27px;}
+
+    p{
+        color: #fff;
+        margin: 30px 0 0 0;
+    }
+}
+.discounts{
+    background-color: #fff;
+    height: 480px;
+    box-shadow: 2px 2px 2px rgb(192, 192, 192);
+    position: relative;
+    padding-top: 63px;
+.rocket{
+    position: absolute;
+    top: -106px;
+    left: -178px;
+}
+.str{width: 1px;
+    height: 80%;
+    background-color: #c4c4c4;
+    position: absolute;
+    left: 50%;
+    top: 46px;
+}
+hr{ border: rgb(196, 196, 196) solid 0.5px;}
+
+
+
+.partt{
+    text-align: center;
+width: 49%;
+display: inline-block;
+.off{@include fonts (35px, poppinsbold, 400, $p-2);
+    text-transform: uppercase;
+
+}
+.pages{@include fonts (17px, poppinsssemibold, 400, $p-1);}
+}
+
+}
+
+.banner {
+    background-color: $p-1;
+    height: 480px;
+    text-align: center;
+span{@include fonts (25px, poppinsssemibold, 400, #fff);
+text-transform: uppercase;}
+.punt{
+height: 440px;
+padding: 20px;
+margin-top: 20px;
+    border: $d1-p1 dashed  2px;
+    border-radius: 15px;
+    text-align: center;
+
+    .banpunt{
+height: 210px;
+width: 270px;
+border: #fff dashed  2px;
+background-color: $d1-p1;
+border-radius: 15px;
+display: inline-block;
+margin-top: 25px;
+position: relative;
+
+
+img{
+    position: absolute;
+    top: -14px;
+    left: -16px;
+}
+
+.get{@include fonts (24px, poppinsmedium, 400, #fff);}
+.d1{@include fonts (62px, poppinsbold, 400, $p-3);}
+.d2{@include fonts (62px, poppinsbold, 400, $p-3);
+    display: inline-block;
+margin-top: -30px;}
+.ddd {@include fonts (14px, poppinsmedium, 400, #fff);
+    margin-top: -16px;
+}
+.first {@include fonts (18px, opensansitalic, 400, #fff);
+    display: inline-block;
+    margin-top: 47px;}
+
+    }
+}
+}
+}
+
+.part5 {
+    text-align: center;
+    margin: 83px 0 100px 0;
+
+h2{
+    margin: 27px 0 60px 0;
+}
+
+.carousel-item{
+    
+    text-align: center;
+img{
+        display: inline-block;
+
+}
+p{
+    padding: 30px 80px 30px 80px;
+}
+.seq { @include fonts (17px, poppinsmedium, 400, $p-1);}
+.data { @include fonts (13px, poppinsregular, 400, $p-4); display: block;}
+}
+.carousel-control-prev-icon {
+    background-image:url(../img/svg/arrow.svg);
+
+}
+.carousel-control-next-icon {
+    background-image: url(../img/svg/arrow.svg);
+    transform: scale(-1, 1); 
+}}

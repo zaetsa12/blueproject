@@ -1,0 +1,32 @@
+.foot {
+    background-color: $p-1;
+    height: 600px;
+
+    img{margin-top: 20px;}
+
+    .dropdown {
+        a{@include fonts (12px, poppinsmedium, 400, #fff); margin-top: 37px;}
+    }
+
+hr {border: #fff solid 0.5px; margin-top: 40px;}
+
+h5{color: #fff; margin: 10px 0 10px 0;}
+
+ul{
+    list-style: none;
+    @include fonts (12px, poppinsregular, 400, #fff);
+    margin-right: -15px;
+    line-height: 27px;
+ 
+}
+
+.kolo1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    i { color: #fff; transform: scale(-1, 1); margin-left: 5px; }
+    
+}
+
+}
