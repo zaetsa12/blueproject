@@ -19,22 +19,38 @@
 
 .buts{
     margin-top: 30px;
-.burger{
-    margin-left: 5px;
-    display: inline-block;
-    width: 30px;
-    height: 2px;
-    background-color: #fff;
-    position: relative;
 
-.burger::after {
-    position: absolute;
-    top: 20px;
-}
-.burger::before {
-    position: absolute;
-    top: -20px;
-}}
+
+    .burger {
+        margin-left: 10px;
+        display: inline-block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin-top: 10px;
+        padding: 0px;
+    }
+    
+    .burger::before {
+        content: '';
+        width: 25px;
+    
+        display: block;
+        height: 3px;
+        background-color: #fff;
+        position: relative;
+        top: -10px;
+    }
+    .burger::after {
+        content: '';
+        display: block;
+        height: 3px;
+        background-color: #fff;
+        position: relative;
+        top: 7px;
+        width: 25px;
+    
+    }
   
 .btn6  {
     @include button(100px, 40px,$d1-p1, $d1-p1 solid 1px);

@@ -12,6 +12,21 @@ h1, h2, h3, h4, h5, h5 , div, ul, li, p , span  {
     padding: 0;
 }
 
+@keyframes spin {
+0%{   
+    transform:rotateY(0deg);} 
+   
+
+50%{   
+    transform:rotateY(180deg); 
+   }
+
+
+    100%{   
+ transform:rotateY(360deg);} 
+}
+
+
 h1 {@include fonts(35px,'poppinsbold', 400, #1e2021);}
 h2 {@include fonts(33px,'poppinsmedium', 400, #323538);}
 h3 {@include fonts(27px,'poppinsmedium', 400, #1e2021);}
@@ -83,6 +98,13 @@ h5{
 }
 
 }
+
+.serv:hover {
+    height: 310px;
+    box-shadow: 4px 4px 4px $l2-p1;
+}
+
+
 .ttt{
     text-align: center;
 .btn6{
@@ -101,16 +123,26 @@ h5{
 h2{
     margin: 27px 0 60px 0;
 }
-    .step {
-        text-align: center;
 
-        span {@include fonts (17px, poppinsssemibold, 400, #1e2021);
-        text-transform: uppercase;
-        display: block;
-        margin: 35px 0 22px 0;}
-            
+
+            .step {
+                text-align: center;
+
+                span
+                {@include fonts (17px, poppinsssemibold, 400, #1e2021);
+                text-transform: uppercase;
+                display: block;
+                margin: 35px 0 22px 0;
+            }
+
+        
+ 
+}
+.step:hover img {
+    animation: spin 2s linear infinite;
     }
 }
+
 
 .part4{
     background-color: $p-1;

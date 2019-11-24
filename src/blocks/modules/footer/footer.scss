@@ -1,8 +1,11 @@
 .foot {
     background-color: $p-1;
     height: 600px;
+    padding-top: 20px;
 
-    img{margin-top: 20px;}
+ 
+
+    .logof {margin-top: 20px;}
 
     .dropdown {
         a{@include fonts (12px, poppinsmedium, 400, #fff); margin-top: 37px;}
@@ -20,13 +23,46 @@ ul{
  
 }
 
+.down {
+    padding-top: 20px;
+
+    @include fonts (13px, poppinsmedium, 400, #fff);   
+
+    .kolo2{
+        margin-right: 10px;
+        padding-top: 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        text-align: center;
+
+           i { color: #fff; margin-top: 5px; }
+             }
+
+.phone{
+                 
+img {
+            float: left;
+            margin-right: 5px;
+        }   
+
+.numb {
+    @include fonts (16px, poppinsmedium, 400, #fff);
+}
+
+}
 .kolo1{
+    margin-right: 10px;
+    text-align: center;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #fff;
-    i { color: #fff; transform: scale(-1, 1); margin-left: 5px; }
-    
-}
+    float: left;
 
-}
+    i { color: $p-1; transform: scale(-1, 1); margin-top: 8px; }
+    
+        }
+
+    }}
